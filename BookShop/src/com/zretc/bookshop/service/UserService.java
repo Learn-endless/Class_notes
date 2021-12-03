@@ -9,9 +9,11 @@ public interface UserService {
 	//修改密码
 	public abstract boolean updatePwd(UserEntity user,String newPwd1,String newPwd2);
 	//用户注册
-	public boolean userRegister(String name,String pwd);
+	public abstract boolean userRegister(String name,String pwd);
 	//显示用户信息
-	public void display();
+	public abstract void display();
 	//删除用户
-	public boolean remove(int n);
+	public abstract boolean remove(int n);
+	//显示所有图书
+	public abstract void bookDisplay();
 }

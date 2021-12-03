@@ -11,6 +11,9 @@ public class User {
     private String username;
     private String password;
 
+    public User(Object o, String username, String password, String name, String email, String telephone) {
+    }
+
     public int getId() {
         return id;
     }

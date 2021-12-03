@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.zretc.bookshop.dao.BaseDao;
 import com.zretc.bookshop.dao.UserDao;
+import com.zretc.bookshop.entity.BookEntity;
 import com.zretc.bookshop.entity.UserEntity;
 
 public class UserDaoImpl extends BaseDao implements UserDao {
@@ -60,5 +61,13 @@ public class UserDaoImpl extends BaseDao implements UserDao {
 			return true;
 		}
 		return false;
+	}
+	
+	//显示所有图书
+	public void bookDisplay(){
+		List<BookEntity> books = super.getBooks();
+		for(BookEntity x: books){
+			System.out.println(x);
+		}
 	}
 }

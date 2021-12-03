@@ -14,4 +14,6 @@ public interface UserDao {
 	public void display();
 	//删除用户
 	public boolean remove(int n);
+	//显示所有图书
+	public void bookDisplay();
 }

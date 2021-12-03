@@ -36,4 +36,8 @@ public class UserServiceImpl implements UserService{
 		// TODO Auto-generated method stub
 		return userdao.remove(n);
 	}
+	//显示所有图书
+	public void bookDisplay(){
+		userdao.bookDisplay();
+	}
 }

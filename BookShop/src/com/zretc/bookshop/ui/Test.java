@@ -1,5 +1,6 @@
 package com.zretc.bookshop.ui;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import com.zretc.bookshop.entity.UserEntity;
@@ -18,8 +19,8 @@ public class Test {
 		//系统执行流程
 		loop1:while(true) {
 			System.out.println("****************************");
-			System.out.println("****  欢迎来到图书系统  *****");
-			System.out.println("**** 1.登录 2.退出系统  *****");
+			System.out.println("****  欢迎来到图书系统  ****");
+			System.out.println("**** 1.登录 2.退出系统  ****");
 			System.out.println("****************************");
 			System.out.print("请选择》》》");
 			int num = sc.nextInt();
@@ -49,7 +50,7 @@ public class Test {
 								break loop1;
 							}
 						}else {
-							System.out.println("请重新输入用户名和密码！");
+							System.out.println("用户名或密码错误，请重新输入！");
 							break loop2;
 						}
 				}
@@ -65,11 +66,13 @@ public class Test {
 	
 	public static int menu(UserService user,UserEntity user1){
 		Scanner sc = new Scanner(System.in);
+		String[] admin_menu = {"1.修改密码\t2.注册\t3.退出登陆\t4.退出系统\t5.显示图书信息\t6.显示用户信息\t7.删除用户"};
+		String[] user_menu = {"1.修改密码\t2.注册\t3.退出登陆\t4.退出系统\t5.显示图书信息"};
 		while(true) {
 			if(user1.getIdentity()==1){
-				System.out.println("1.修改密码\t2.注册\t\t3.退出登陆\t4.退出系统\t5.显示用户信息\t6.删除用户");
+				System.out.println(Arrays.toString(admin_menu));
 			}else{
-				System.out.println("1.修改密码\t2.注册\t\t3.退出登陆\t4.退出系统");
+				System.out.println(Arrays.toString(user_menu));
 			}
 			System.out.print("请选择：");
 			int ret = sc.nextInt();
@@ -96,7 +99,10 @@ public class Test {
 				if(flag) {
 					break;
 				}
-			}else if(user1.getIdentity()==1&&ret == 5){
+			}else if(ret == 5){
+				//显示所有图书信息
+				user.bookDisplay();
+			}else if(user1.getIdentity()==1&&ret == 6){
 				//显示用户信息
 				user.display();
 			}else if(ret == 3) {
@@ -106,7 +112,7 @@ public class Test {
 				//退出系统
 				System.out.println("欢迎下次光临");
 				return -1;
-			}else if(user1.getIdentity()==1&&ret == 6){
+			}else if(user1.getIdentity()==1&&ret == 7){
 				System.out.println("请输入所需删除用户的编号：");
 				int n = sc.nextInt();
 				//删除用户
