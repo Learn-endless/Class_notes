@@ -1,0 +1,252 @@
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test1 {
+	public static void main(String[] args) {
+		try (FileInputStream pf = new FileInputStream("D:\\text.txt_4")) {
+			int data = pf.read();
+			char str = (char)data;
+			System.out.println(str);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+package com.input.learn;
+
+import java.io.FileInputStream;
+
+public class Test3 {
+	public static void main(String[] args) {
+		try(FileInputStream pf = new FileInputStream("text_6.txt")){
+			byte[] b = new byte[1024];
+			int lenth = 0;
+			StringBuilder ret = new StringBuilder();
+			while((lenth = pf.read(b))!= -1){
+				String str = new String(b,0,lenth);
+				ret.append(str);
+			}
+			System.out.println(ret);
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
