@@ -1,4 +1,4 @@
-package com.zretc.bookshop.entity;
+package com.j2se.bookshop.entity;
 //用户实体类
 public class UserEntity {
 	//用户编号,唯一
@@ -11,12 +11,10 @@ public class UserEntity {
 	private int identity;
 	//构造方法
 	public UserEntity() {
-		super();
-		// TODO 自动生成的构造函数存根
+
 	}
 
 	public UserEntity(int userId, String userName, String userPwd ,int identity) {
-		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPwd = userPwd;
@@ -54,7 +52,7 @@ public class UserEntity {
 	//重写toString方法
 	@Override
 	public String toString() {
-		return "UserEntity [编号：" + userId + ", 用户名：" + userName + ", 权限："+ (identity==1?"管理员":"普通用户") + "]";
+		return "用户 [编号：" + userId + "\t用户名：" + userName + "\t权限："+ (identity==1?"管理员":"普通用户") + "]";
 	}
 	
 }

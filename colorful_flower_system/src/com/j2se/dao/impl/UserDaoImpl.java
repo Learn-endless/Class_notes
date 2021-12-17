@@ -13,7 +13,8 @@ public class UserDaoImpl extends BaseFlower implements UserDao{
 	@Override
 	public void queryFlower() {
 		List<FlowerEntity> flow = this.getFlowers();
-		System.out.println("编号\t鲜花名称\t\t销售数量\t价格\t销售日期\t\t销售员\t备注");
+		System.out.println("编号\t鲜花名称\t\t销售数量\t价格\t"
+				+ "销售日期\t\t销售员\t备注");
 		for (FlowerEntity x : flow) {
 			System.out.println(x);
 		}

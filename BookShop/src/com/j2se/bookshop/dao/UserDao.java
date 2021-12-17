@@ -1,6 +1,6 @@
-package com.zretc.bookshop.dao;
+package com.j2se.bookshop.dao;
 
-import com.zretc.bookshop.entity.UserEntity;
+import com.j2se.bookshop.entity.UserEntity;
 
 //数据访问层中用户相关的借口
 public interface UserDao {

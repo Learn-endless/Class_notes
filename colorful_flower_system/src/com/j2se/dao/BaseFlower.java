@@ -23,7 +23,7 @@ public class BaseFlower {
 		flowers.add(new FlowerEntity(1007,"天生丽质-红山茶",3100,584.5,"2016-12-26","李四",""));
 		flowers.add(new FlowerEntity(1008,"伟大母爱-康乃馨",4600,95.5,"2016-12-29","王五","母亲最伟大"));
 	} 
-	
+	//获取所有鲜花订单对象
 	public List<FlowerEntity> getFlowers(){
 		return flowers;
 	}

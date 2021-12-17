@@ -1,6 +1,6 @@
-package com.zretc.bookshop.service;
+package com.j2se.bookshop.service;
 
-import com.zretc.bookshop.entity.UserEntity;
+import com.j2se.bookshop.entity.UserEntity;
 
 //业务逻辑层中的相关接口
 public interface UserService {

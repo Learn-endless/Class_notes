@@ -13,6 +13,9 @@ public class FlowerEntity {
 	private String people; //销售人员
 	private String remarks;//备注
 	
+	public FlowerEntity() {
+
+	}
 	public FlowerEntity(int id, String name, int total, double price, String date, String people, String remarks) {
 		this.id = id;
 		this.name = name;
@@ -22,7 +25,6 @@ public class FlowerEntity {
 		this.people = people;
 		this.remarks = remarks;
 	}
-
 	public int getId() {
 		return id;
 	}
@@ -51,7 +53,7 @@ public class FlowerEntity {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -83,7 +85,5 @@ public class FlowerEntity {
 	public String toString() {
 		return  id + "\t" + name + "\t" + total + "\t" + price + "\t" + date
 				+ "\t" + people + "\t" + remarks;
-	}
-	
-	
+	}	
 }

@@ -1,5 +1,9 @@
-package com.zretc.bookshop.entity;
-
+package com.j2se.bookshop.entity;
+/**
+ * 图书实体类
+ * @author 19833
+ *
+ */
 public class BookEntity {
 	//编号
 	private int bookId;
@@ -11,18 +15,19 @@ public class BookEntity {
 	private double price;
 	
 	public BookEntity() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public BookEntity(int bookId, String name, String author, double price) {
-		super();
 		this.bookId = bookId;
 		this.name = name;
 		this.author = author;
 		this.price = price;
 	}
-	
+	@Override
+	public String toString() {
+		return "图书:  编号 " + bookId + "\t书名 " + name + "\t作者 " + author + "\t价格 " + price;
+	}
 	public int getBookId() {
 		return bookId;
 	}
@@ -48,9 +53,6 @@ public class BookEntity {
 		this.price = price;
 	}
 
-	@Override
-	public String toString() {
-		return "Book [编号：" + bookId + ", 书名：" + name + ", 作者：" + author + ", 价格：" + price + "]";
-	}
+
 	
 }

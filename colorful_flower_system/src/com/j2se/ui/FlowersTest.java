@@ -7,9 +7,7 @@ import com.j2se.service.impl.UserServiceImpl;
 public class FlowersTest {
 	//菜单
 	public static void menu() {
-		System.out.print("==========");
-		System.out.print("鲜花销售系统");
-		System.out.println("==========");
+		System.out.println("========鲜花销售系统========");
 		System.out.println("1.查询销售订单");
 		System.out.println("2.修改销售订单");
 		System.out.println("3.删除销售订单");

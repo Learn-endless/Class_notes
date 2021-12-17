@@ -1,9 +1,9 @@
-package com.zretc.bookshop.service.impl;
+package com.j2se.bookshop.service.impl;
 
-import com.zretc.bookshop.dao.UserDao;
-import com.zretc.bookshop.dao.impl.UserDaoImpl;
-import com.zretc.bookshop.entity.UserEntity;
-import com.zretc.bookshop.service.UserService;
+import com.j2se.bookshop.dao.UserDao;
+import com.j2se.bookshop.dao.impl.UserDaoImpl;
+import com.j2se.bookshop.entity.UserEntity;
+import com.j2se.bookshop.service.UserService;
 
 public class UserServiceImpl implements UserService{
 	UserDao userdao = new UserDaoImpl();
