@@ -4,7 +4,9 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 
-
+/**
+*通过域名获取IP
+*/
 public class TestDemo1 {
     public static void main(String[] args) {
         IntegerAddress adder = new InetAdderss();
