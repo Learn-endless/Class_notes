@@ -11,12 +11,13 @@ public class Test {
         String theme = "这是一封测试邮件";             //邮件主题
         String content = "hello word!~~~";              //邮件具体内容
         try(
-                FileReader fs = new FileReader("toUser.txt");
+                FileReader fs = new FileReader("toUser.txt");//字符流
+				
                 BufferedReader br = new BufferedReader(fs);  //字符装饰流
                 ){
-            //循环读取
+            
             String ret = null;
-            //每次读一行
+            //循环读取,每次读一行
             while((ret = br.readLine())!=null){
                 //发送成功提示一下
                 if(SendMailTools.sendMail(ret,toFrom,toFromPassWord,theme,content)){
